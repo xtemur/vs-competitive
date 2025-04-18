@@ -19,7 +19,7 @@
         {
             "label": "compile and run",
             "type": "shell",
-            "command": "g++ -std=c++17 -o ./bin/${fileBasenameNoExtension} ${file} && ./bin/${fileBasenameNoExtension} < input.txt > output.txt",
+            "command": "mkdir -p ./bin && g++ -std=c++17 -o ./bin/${fileBasenameNoExtension} ${file} && ./bin/${fileBasenameNoExtension} < input.txt > output.txt",
             "group": {
                 "kind": "build",
                 "isDefault": true
